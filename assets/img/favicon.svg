@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="a"><rect width="32" height="32"/></clipPath>
+  </defs>
+  <g clip-path="url(#a)" fill="#E8405A">
+    <path fill-rule="evenodd" d="M1,16 A15,15 0 0,1 31,16 A15,15 0 0,1 1,16 Z M9.86,16 A6.14,6.14 0 0,1 22.14,16 A6.14,6.14 0 0,1 9.86,16 Z"/>
+    <polygon points="25.96,17.31 21.63,9.57 36.32,1.35 40.65,9.09"/>
+    <polygon points="21.03,23.58 24.67,15.50 40.91,22.83 37.26,30.91"/>
+  </g>
+</svg>

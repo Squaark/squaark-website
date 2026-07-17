@@ -87,18 +87,10 @@ code {
   display: flex; align-items: center; justify-content: space-between;
 }
 .logo { display: flex; align-items: center; }
-.logo img { height: 28px; width: auto; display: block; }
+.logo svg { height: 28px; width: auto; display: block; }
 /* Light mode: show logo with dark text (logo-dark.svg) */
-.logo-img-light { display: block; }
-.logo-img-dark  { display: none; }
-@media (prefers-color-scheme: dark) {
-  .logo-img-light { display: none; }
-  .logo-img-dark  { display: block; }
-}
-:root[data-theme="dark"]  .logo-img-light { display: none; }
-:root[data-theme="dark"]  .logo-img-dark  { display: block; }
-:root[data-theme="light"] .logo-img-light { display: block; }
-:root[data-theme="light"] .logo-img-dark  { display: none; }
+.logo-img { display: block; }
+
 .nav-right { display: flex; align-items: center; gap: 4px; }
 .nav-lnk {
   font-size: 0.85rem; font-weight: 500;

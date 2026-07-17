@@ -1,8 +1,6 @@
 function toggleTheme() {
   var root = document.documentElement;
-  var current = root.getAttribute('data-theme')
-    || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  var next = current === 'dark' ? 'light' : 'dark';
+  var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   root.setAttribute('data-theme', next);
   localStorage.setItem('sq-theme', next);
 }
