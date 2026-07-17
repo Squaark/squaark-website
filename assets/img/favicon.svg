@@ -1,10 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <defs>
-    <clipPath id="a"><rect width="32" height="32"/></clipPath>
-  </defs>
-  <g clip-path="url(#a)" fill="#E8405A">
-    <path fill-rule="evenodd" d="M1,16 A15,15 0 0,1 31,16 A15,15 0 0,1 1,16 Z M9.86,16 A6.14,6.14 0 0,1 22.14,16 A6.14,6.14 0 0,1 9.86,16 Z"/>
-    <polygon points="25.96,17.31 21.63,9.57 36.32,1.35 40.65,9.09"/>
-    <polygon points="21.03,23.58 24.67,15.50 40.91,22.83 37.26,30.91"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g>
+        <g transform="matrix(0.799549,0,0,0.799549,-0.799549,3.200451)">
+            <path d="M1,16C1,7.771 7.771,1 16,1C24.229,1 31,7.771 31,16C31,24.229 24.229,31 16,31C7.771,31 1,24.229 1,16ZM9.86,16C9.86,12.632 12.632,9.86 16,9.86C19.368,9.86 22.14,12.632 22.14,16C22.14,19.368 19.368,22.14 16,22.14C12.632,22.14 9.86,19.368 9.86,16Z" style="fill:rgb(232,64,90);"/>
+        </g>
+        <g transform="matrix(0.799549,0,0,0.799549,-0.799549,3.200451)">
+            <path d="M25.96,17.31L21.63,9.57L36.32,1.35L40.65,9.09L25.96,17.31Z" style="fill:rgb(232,64,90);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.799549,0,0,0.799549,-0.799549,3.200451)">
+            <path d="M21.03,23.58L24.67,15.5L40.91,22.83L37.26,30.91L21.03,23.58Z" style="fill:rgb(232,64,90);fill-rule:nonzero;"/>
+        </g>
+    </g>
 </svg>
