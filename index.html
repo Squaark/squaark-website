@@ -205,6 +205,16 @@
                 <td class="td-no">Pray nothing breaks</td>
               </tr>
               <tr>
+                <td>Analytics</td>
+                <td class="td-sq td-yes">✓ Built in</td>
+                <td class="td-no">Plugin required</td>
+              </tr>
+              <tr>
+                <td>Customer accounts</td>
+                <td class="td-sq td-yes">✓ Built in</td>
+                <td class="td-no">Plugin required</td>
+              </tr>
+              <tr>
                 <td>Open source</td>
                 <td class="td-sq td-yes">✓ MIT</td>
                 <td class="td-no">GPL / freemium</td>
@@ -221,28 +231,28 @@
     <div class="wrap">
       <span class="eyebrow">What's included</span>
       <h2>Everything built in.<br>Nothing bolted on.</h2>
-      <p class="section-lead">squaark ships as a single Node.js process. The features below are part of the platform - not plugins, not add-ons, not a marketplace purchase.</p>
+      <p class="section-lead">squaark ships as a single Node.js process. The features below are part of the platform. They aren't plugins, add-ons, or a marketplace purchase.</p>
 
       <div class="feat-list">
         <div class="feat-row">
           <div class="feat-name">Handlebars themes</div>
-          <div class="feat-desc">Themes are a folder of <code>.hbs</code> files and CSS. No React, no build pipeline required. If you can write HTML, you can build a theme. Package as a zip and install from the admin.</div>
+          <div class="feat-desc">Themes are a folder of <code>.hbs</code> files and CSS. No SPA, and no build pipeline required. If you can write HTML, you can build a theme, package as a zip and install from the admin.</div>
         </div>
         <div class="feat-row">
           <div class="feat-name">SQLite, embedded</div>
-          <div class="feat-desc">No separate database process to install or connect to. SQLite lives inside the Node.js process. Search, sessions, background jobs, config - everything in one file you can back up with <code>cp</code>.</div>
+          <div class="feat-desc">No separate database process to install or connect to. SQLite lives inside the Node.js process. Everything is in one file including search, sessions, background jobs, config, and you can back up with <code>cp</code>.</div>
         </div>
         <div class="feat-row">
           <div class="feat-name">htmx interactivity</div>
-          <div class="feat-desc">Add-to-cart, quantity updates, live theme config preview - all powered by HTML fragments returned from the server. Pages work without JavaScript. htmx is progressive enhancement, not a requirement.</div>
+          <div class="feat-desc">Pages work without JavaScript. Add-to-cart, quantity updates and live theme config preview are all powered by HTML fragments returned from the server. Htmx is a progressive enhancement, not a requirement.</div>
         </div>
         <div class="feat-row">
           <div class="feat-name">Full-text search</div>
           <div class="feat-desc">SQLite's FTS5 engine handles product search with relevance ranking and prefix matching. Title matches outrank description matches.</div>
         </div>
         <div class="feat-row">
-          <div class="feat-name">Stripe payments</div>
-          <div class="feat-desc">Checkout, payment intents, order confirmation emails - included out of the box. No payments plugin to license or keep in sync, just connect your Stripe account and go.</div>
+          <div class="feat-name">Stripe and PayPal</div>
+          <div class="feat-desc">Both payment providers work out of the box and can run simultaneously. There is no payments plugin to license or keep in sync.</div>
         </div>
         <div class="feat-row">
           <div class="feat-name">Live theme editor</div>
@@ -250,7 +260,23 @@
         </div>
         <div class="feat-row">
           <div class="feat-name">WooCommerce import</div>
-          <div class="feat-desc">Migrate your existing store with the built-in import tool. Products, collections, customers, and order history - imported from WooCommerce's standard export format.</div>
+          <div class="feat-desc">Migrate your existing woocommerce store with the built-in import tool. You can use the wordpress export tool or the wordpress API which will bring your products, collections and orders into your squaark store.</div>
+        </div>
+        <div class="feat-row">
+          <div class="feat-name">Customer accounts</div>
+          <div class="feat-desc">Customers can register, sign in, and view their order history directly on the storefront. After checkout they're prompted to set a password. You can toggle customer accounts it on or off in Settings.</div>
+        </div>
+        <div class="feat-row">
+          <div class="feat-name">Built-in analytics</div>
+          <div class="feat-desc">Your dashboard shows key analytics such as page views, unique visitors, top pages, and top referrers. You can of course add your own analytics but by default there is no cookie banner and no data leaving your server.</div>
+        </div>
+        <div class="feat-row">
+          <div class="feat-name">Multi-user admin</div>
+          <div class="feat-desc">Add staff accounts with a restricted role: they can manage products and orders but can't touch settings, themes, imports, or user management. Useful once the team grows beyond just you.</div>
+        </div>
+        <div class="feat-row">
+          <div class="feat-name">System logs</div>
+          <div class="feat-desc">Payment events, sent emails, and server errors are captured and viewable in the admin under Settings → Logs. No need to SSH in to debug a failed payment or a bounced confirmation email.</div>
         </div>
         <div class="feat-row">
           <div class="feat-name">Secure by default</div>
@@ -277,7 +303,7 @@
         <pre><span class="c"># Clone and configure</span>
 <span class="k">git clone</span> https://github.com/squaark/squaark
 <span class="k">cd</span> squaark && <span class="k">cp</span> .env.example .env
-<span class="c"># Set STORE_NAME, STRIPE_SECRET_KEY, and SESSION_SECRET in .env</span>
+<span class="c"># Set STORE_NAME, STRIPE_SECRET_KEY, PAYPAL_CLIENT_ID, SESSION_SECRET in .env</span>
 
 <span class="c"># SQLite is embedded - no database server to start or connect to</span>
 <span class="k">node</span> server.js
@@ -310,10 +336,13 @@
             <li>Full ecommerce platform</li>
             <li>Unlimited products &amp; orders</li>
             <li>Handlebars theme engine</li>
-            <li>Stripe payments, built in</li>
+            <li>Stripe and PayPal, built in</li>
+            <li>Customer accounts &amp; order history</li>
+            <li>Built-in analytics, no tracking scripts</li>
+            <li>Multi-user admin with roles</li>
             <li>WooCommerce import</li>
             <li>Discount codes</li>
-            <li>MIT licence - fork it, own it</li>
+            <li>MIT licence — fork it, own it</li>
           </ul>
           <a href="#waitlist" class="btn-fill">Join the waitlist</a>
         </div>
