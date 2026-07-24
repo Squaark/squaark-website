@@ -10,6 +10,6 @@ function handleSubmit(e, okId) {
   e.target.style.display = 'none';
   document.getElementById(okId).style.display = 'block';
   // To actually submit, replace the above with:
-  // fetch(e.target.action, { method:'POST', body:new FormData(e.target), headers:{'Accept':'application/json'} })
-  //   .then(() => { e.target.style.display='none'; document.getElementById(okId).style.display='block'; });
+  fetch(e.target.action, { method:'POST', body:new FormData(e.target), headers:{'Accept':'application/json'} })
+    .then(() => { e.target.style.display='none'; document.getElementById(okId).style.display='block'; });
 }
